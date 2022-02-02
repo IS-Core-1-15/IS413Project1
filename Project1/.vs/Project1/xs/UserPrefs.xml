@@ -1,4 +1,20 @@
 ﻿<Properties StartupConfiguration="{73144C69-EB1E-4D9A-BA93-D3D001775FFF}|Default">
-  <MonoDevelop.Ide.ItemProperties.Project1 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Project1 FirstBuild="True" PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Project1" expanded="True" selected="True">
+            <Node name="Project1" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
