@@ -16,7 +16,7 @@ namespace Project1.Models
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
-            mb.Entity<CategoryModel> ().HasData(
+            mb.Entity<CategoryModel>().HasData(
                 new CategoryModel
                 {
                     CategoryID = 1,
@@ -49,8 +49,9 @@ namespace Project1.Models
                     Task = "Make the database",
                     Date = DateTime.UtcNow,
                     Quadrant = 1,
-                    CategoryID = 1,
-                    Completed = true
+                    Completed = true,
+                    CategoryID = 1
+
                 },
 
                 new TasksModel
@@ -59,8 +60,8 @@ namespace Project1.Models
                     Task = "Make the Shared Layout",
                     Date = DateTime.UtcNow,
                     Quadrant = 2,
-                    CategoryID = 3,
-                    Completed = false
+                    Completed = false,
+                    CategoryID = 3
                 },
 
                 new TasksModel
@@ -69,8 +70,9 @@ namespace Project1.Models
                     Task = "Make the quadrant views",
                     Date = DateTime.UtcNow,
                     Quadrant = 3,
-                    CategoryID = 4,
-                    Completed = false
+                    Completed = false,
+                    CategoryID = 4
+
                 },
 
                 new TasksModel
@@ -79,8 +81,9 @@ namespace Project1.Models
                     Task = "Make the Controllers",
                     Date = DateTime.UtcNow,
                     Quadrant = 4,
-                    CategoryID = 5,
-                    Completed = false
+                    Completed = false,
+                    CategoryID = 2
+
                 }
             );
         }
