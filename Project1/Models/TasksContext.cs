@@ -12,15 +12,44 @@ namespace Project1.Models
 
         public DbSet<TasksModel> Tasks { get; set; }
 
+        public DbSet<CategoryModel> Categories { get; set; }
+
         protected override void OnModelCreating(ModelBuilder mb)
         {
+            mb.Entity<CategoryModel> ().HasData(
+                new CategoryModel
+                {
+                    CategoryID = 1,
+                    CategoryName = "School"
+                },
+
+                new CategoryModel
+                {
+                    CategoryID = 2,
+                    CategoryName = "Work"
+                },
+
+                new CategoryModel
+                {
+                    CategoryID = 3,
+                    CategoryName = "Home"
+                },
+
+                new CategoryModel
+                {
+                    CategoryID = 4,
+                    CategoryName = "Church"
+                }
+
+            );
+
             mb.Entity<TasksModel>().HasData(
                 new TasksModel {
                     TaskID = 1,
                     Task = "Make the database",
                     Date = DateTime.UtcNow,
                     Quadrant = 1,
-                    Category = "School",
+                    CategoryID = 1,
                     Completed = true
                 },
 
@@ -30,7 +59,7 @@ namespace Project1.Models
                     Task = "Make the Shared Layout",
                     Date = DateTime.UtcNow,
                     Quadrant = 2,
-                    Category = "Home",
+                    CategoryID = 3,
                     Completed = false
                 },
 
@@ -40,7 +69,7 @@ namespace Project1.Models
                     Task = "Make the quadrant views",
                     Date = DateTime.UtcNow,
                     Quadrant = 3,
-                    Category = "Work",
+                    CategoryID = 4,
                     Completed = false
                 },
 
@@ -50,7 +79,7 @@ namespace Project1.Models
                     Task = "Make the Controllers",
                     Date = DateTime.UtcNow,
                     Quadrant = 4,
-                    Category = "Church",
+                    CategoryID = 5,
                     Completed = false
                 }
             );
