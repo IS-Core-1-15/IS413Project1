@@ -17,8 +17,10 @@ namespace Project1.Models
         [Required(ErrorMessage = "You must provide a quadrant")]
         public int Quadrant { get; set; }
 
-        public string Category { get; set; }
-
         public bool Completed { get; set; }
+
+        public int CategoryID { get; set; }
+        public CategoryModel Category { get; set; }
+
     }
 }

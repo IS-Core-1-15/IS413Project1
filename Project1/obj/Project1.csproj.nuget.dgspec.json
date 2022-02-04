@@ -14,7 +14,7 @@
         "outputPath": "/Users/kalvin_wettstein/My_Code/Class/413/IS413Project1/Project1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/kalvin_wettstein/.nuget/NuGet/NuGet.Config"
+          "/Users/kalvin_wettstein/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
