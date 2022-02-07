@@ -12,10 +12,6 @@ namespace Project1.Controllers
     public class HomeController : Controller
     {
         
-        public HomeController()
-        {
-
-        }
 
         private TasksContext tContext { get; set; }
 
@@ -76,7 +72,7 @@ namespace Project1.Controllers
         }
 
         [HttpGet]
-        public IActionResult Delete(int taskid)
+        public IActionResult DeleteTask(int taskid)
         {
             var task = tContext.Tasks
                 .Single(x => x.TaskID == taskid);
@@ -85,7 +81,7 @@ namespace Project1.Controllers
         }
 
         [HttpPost]
-        public IActionResult Delete(TasksModel tm)
+        public IActionResult DeleteTask(TasksModel tm)
         {
             tContext.Tasks.Remove(tm);
             tContext.SaveChanges();
