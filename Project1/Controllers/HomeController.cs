@@ -18,9 +18,80 @@ namespace Project1.Controllers
             _logger = logger;
         }
 
+        private TasksContext tContext { get; set; }
+
+        public HomeController(TasksContext localContext)
+        {
+            tContext = localContext;
+        }
+
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult AddTask()
+        {
+            ViewBag.Categories = tContext.Categories.ToList();
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AddTask(TasksModel tm)
+        {
+            if (ModelState.IsValid)
+            {
+                tContext.Add(tm);
+                tContext.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.Categories = tContext.Categories.ToList();
+
+                return View();
+            }
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int taskid)
+        {
+            ViewBag.Categories = tContext.Categories.ToList();
+
+            var task = tContext.Tasks
+                .Single(x => x.TaskID == taskid);
+
+            return View("AddTask", task);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(TasksModel tm)
+        {
+            tContext.Update(tm);
+            tContext.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int taskid)
+        {
+            var task = tContext.Tasks
+                .Single(x => x.TaskID == taskid);
+
+            return View(task);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(TasksModel tm)
+        {
+            tContext.Tasks.Remove(tm);
+            tContext.SaveChanges();
+
+            return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()

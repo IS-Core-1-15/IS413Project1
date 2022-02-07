@@ -1194,24 +1194,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/kalvin_wettstein/.nuget/packages/": {}
+    "C:\\Users\\steph\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kalvin_wettstein/My_Code/Class/413/IS413Project1/Project1/Project1.csproj",
+      "projectUniqueName": "C:\\Users\\steph\\source\\repos\\IS413Project1\\Project1\\Project1.csproj",
       "projectName": "Project1",
-      "projectPath": "/Users/kalvin_wettstein/My_Code/Class/413/IS413Project1/Project1/Project1.csproj",
-      "packagesPath": "/Users/kalvin_wettstein/.nuget/packages/",
-      "outputPath": "/Users/kalvin_wettstein/My_Code/Class/413/IS413Project1/Project1/obj/",
+      "projectPath": "C:\\Users\\steph\\source\\repos\\IS413Project1\\Project1\\Project1.csproj",
+      "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\steph\\source\\repos\\IS413Project1\\Project1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/kalvin_wettstein/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1269,7 +1271,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
