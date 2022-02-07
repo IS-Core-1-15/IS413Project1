@@ -1,21 +1,21 @@
 ﻿<Properties StartupConfiguration="{73144C69-EB1E-4D9A-BA93-D3D001775FFF}|Default">
   <MonoDevelop.Ide.ItemProperties.Project1 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/TasksContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/addTask.cshtml">
     <Files>
-      <File FileName="Startup.cs" Line="11" Column="37" />
-      <File FileName="Models/TasksContext.cs" Line="63" Column="39" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="24" Column="46" />
+      <File FileName="Views/Home/addTask.cshtml" Line="37" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Project1" expanded="True">
             <Node name="Project1" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="TasksContext.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="addTask.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
             </Node>
