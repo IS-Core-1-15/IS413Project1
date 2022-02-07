@@ -1,11 +1,22 @@
 ﻿<Properties StartupConfiguration="{73144C69-EB1E-4D9A-BA93-D3D001775FFF}|Default">
   <MonoDevelop.Ide.ItemProperties.Project1 FirstBuild="True" PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/TasksModel.cs">
+    <Files>
+      <File FileName="Startup.cs" Line="31" Column="10" />
+      <File FileName="Models/TasksContext.cs" Line="27" Column="18" />
+      <File FileName="appsettings.json" Line="11" Column="19" />
+      <File FileName="Models/TasksModel.cs" Line="22" Column="44" NotebookId="1" />
+      <File FileName="Models/CategoryModel.cs" Line="8" Column="14" NotebookId="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Project1" expanded="True" selected="True">
-            <Node name="Project1" expanded="True" />
+          <Node name="Project1" expanded="True">
+            <Node name="Project1" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="TasksModel.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
