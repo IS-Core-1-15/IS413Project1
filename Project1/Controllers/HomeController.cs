@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Project1.Models;
 
@@ -22,7 +23,25 @@ namespace Project1.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var tasks = tContext.Tasks
+                .Include(x => x.Category)
+                .Where(x => x.Completed == false)
+                .ToList();
+
+            return View(tasks);
+        }
+
+        public IActionResult MarkComplete(int taskid)
+        {
+            var task = tContext.Tasks
+                .Single(x => x.TaskID == taskid);
+
+            task.Completed = true;
+
+            tContext.Update(task);
+            tContext.SaveChanges();
+
+            return RedirectToAction("Index");
         }
 
         [HttpGet]
