@@ -12,16 +12,46 @@ namespace Project1.Models
 
         public DbSet<TasksModel> Tasks { get; set; }
 
+        public DbSet<CategoryModel> Categories { get; set; }
+
         protected override void OnModelCreating(ModelBuilder mb)
         {
+            mb.Entity<CategoryModel>().HasData(
+                new CategoryModel
+                {
+                    CategoryID = 1,
+                    CategoryName = "School"
+                },
+
+                new CategoryModel
+                {
+                    CategoryID = 2,
+                    CategoryName = "Work"
+                },
+
+                new CategoryModel
+                {
+                    CategoryID = 3,
+                    CategoryName = "Home"
+                },
+
+                new CategoryModel
+                {
+                    CategoryID = 4,
+                    CategoryName = "Church"
+                }
+
+            );
+
             mb.Entity<TasksModel>().HasData(
                 new TasksModel {
                     TaskID = 1,
                     Task = "Make the database",
                     Date = DateTime.UtcNow,
                     Quadrant = 1,
-                    Category = "School",
-                    Completed = true
+                    Completed = true,
+                    CategoryID = 1
+
                 },
 
                 new TasksModel
@@ -30,8 +60,8 @@ namespace Project1.Models
                     Task = "Make the Shared Layout",
                     Date = DateTime.UtcNow,
                     Quadrant = 2,
-                    Category = "Home",
-                    Completed = false
+                    Completed = false,
+                    CategoryID = 3
                 },
 
                 new TasksModel
@@ -40,8 +70,9 @@ namespace Project1.Models
                     Task = "Make the quadrant views",
                     Date = DateTime.UtcNow,
                     Quadrant = 3,
-                    Category = "Work",
-                    Completed = false
+                    Completed = false,
+                    CategoryID = 4
+
                 },
 
                 new TasksModel
@@ -50,8 +81,9 @@ namespace Project1.Models
                     Task = "Make the Controllers",
                     Date = DateTime.UtcNow,
                     Quadrant = 4,
-                    Category = "Church",
-                    Completed = false
+                    Completed = false,
+                    CategoryID = 2
+
                 }
             );
         }
