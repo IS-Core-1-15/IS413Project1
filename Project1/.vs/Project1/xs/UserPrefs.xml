@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.Project1 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Views/Shared/_Layout.cshtml" Line="12" Column="7" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="37" Column="16" />
       <File FileName="Views/Home/DeleteTask.cshtml" Line="1" Column="3" />
       <File FileName="Views/Home/AddTask.cshtml" Line="7" Column="26" />
     </Files>
