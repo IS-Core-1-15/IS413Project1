@@ -35,32 +35,72 @@
             <h5>Important</h5>
         </div>
 
-        <div class="col-5">
-            @foreach (var task in Model)
-            {
-                if (task.Quadrant == 1)
-                {
-                    <p>
-                        @task.Task (<a asp-controller="Home" asp-action="Edit" asp-route-taskid="@task.TaskID">Update</a> 
-                        <a asp-controller="Home" asp-action="DeleteTask" asp-route-taskid="@task.TaskID">Delete</a> 
-                        <a asp-controller="Home" asp-action="MarkComplete" asp-route-taskid="@task.TaskID">Mark completed</a>)
-                    </p>
-                }
-            }
+        <div class="col-5 border">
+            
+            <table class="table table-bordered table-striped border-primary table-sm">
+
+                @*Table header and columns*@
+                <thead class="font-weight-bold table-dark">
+                    <tr>
+                        <td>Task</td>
+                        <td>Update</td>
+                        <td>Delete</td>
+                        <td>Mark Complete</td>
+                    </tr>
+                </thead>
+
+                @*Table body*@
+                <tbody>
+                    @foreach (var task in Model)
+                    {
+                        if (task.Quadrant == 1)
+                        {
+                            <tr>
+                                <td>@task.Task</td>
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-taskid="@task.TaskID">Update</a></td>
+                                <td><a asp-controller="Home" asp-action="DeleteTask" asp-route-taskid="@task.TaskID">Delete</a></td>
+                                <td><a asp-controller="Home" asp-action="MarkComplete" asp-route-taskid="@task.TaskID">Mark completed</a></td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+
+            </table>
+
         </div>
 
-        <div class="col-5">
-            @foreach (var task in Model)
-            {
-                if (task.Quadrant == 2)
-                {
-                    <p>
-                        @task.Task (<a asp-controller="Home" asp-action="Edit" asp-route-taskid="@task.TaskID">Update</a>
-                        <a asp-controller="Home" asp-action="DeleteTask" asp-route-taskid="@task.TaskID">Delete</a>
-                        <a asp-controller="Home" asp-action="MarkComplete" asp-route-taskid="@task.TaskID">Mark completed</a>)
-                    </p>
-                }
-            }
+        <div class="col-5 border">
+
+            <table class="table table-bordered table-striped border-primary table-sm">
+
+                @*Table header and columns*@
+                <thead class="font-weight-bold table-dark">
+                    <tr>
+                        <td>Task</td>
+                        <td>Update</td>
+                        <td>Delete</td>
+                        <td>Mark Complete</td>
+                    </tr>
+                </thead>
+
+                @*Table body*@
+                <tbody>
+                    @foreach (var task in Model)
+                    {
+                        if (task.Quadrant == 2)
+                        {
+                            <tr>
+                                <td>@task.Task</td>
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-taskid="@task.TaskID">Update</a></td>
+                                <td><a asp-controller="Home" asp-action="DeleteTask" asp-route-taskid="@task.TaskID">Delete</a></td>
+                                <td><a asp-controller="Home" asp-action="MarkComplete" asp-route-taskid="@task.TaskID">Mark completed</a></td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+
+            </table>
+
         </div>
 
     </div>
@@ -71,32 +111,72 @@
             <h5>Not Important</h5>
         </div>
 
-        <div class="col-5">
-            @foreach (var task in Model)
-            {
-                if (task.Quadrant == 3)
-                {
-                    <p>
-                        @task.Task (<a asp-controller="Home" asp-action="Edit" asp-route-taskid="@task.TaskID">Update</a>
-                        <a asp-controller="Home" asp-action="DeleteTask" asp-route-taskid="@task.TaskID">Delete</a>
-                        <a asp-controller="Home" asp-action="MarkComplete" asp-route-taskid="@task.TaskID">Mark completed</a>)
-                    </p>
-                }
-            }
+        <div class="col-5 border">
+
+            <table class="table table-bordered table-striped border-primary table-sm">
+
+                @*Table header and columns*@
+                <thead class="font-weight-bold table-dark">
+                    <tr>
+                        <td>Task</td>
+                        <td>Update</td>
+                        <td>Delete</td>
+                        <td>Mark Complete</td>
+                    </tr>
+                </thead>
+
+                @*Table body*@
+                <tbody>
+                    @foreach (var task in Model)
+                    {
+                        if (task.Quadrant == 3)
+                        {
+                            <tr>
+                                <td>@task.Task</td>
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-taskid="@task.TaskID">Update</a></td>
+                                <td><a asp-controller="Home" asp-action="DeleteTask" asp-route-taskid="@task.TaskID">Delete</a></td>
+                                <td><a asp-controller="Home" asp-action="MarkComplete" asp-route-taskid="@task.TaskID">Mark completed</a></td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+
+            </table>
+
         </div>
 
-        <div class="col-5">
-            @foreach (var task in Model)
-            {
-                if (task.Quadrant == 4)
-                {
-                    <p>
-                        @task.Task (<a asp-controller="Home" asp-action="Edit" asp-route-taskid="@task.TaskID">Update</a>
-                        <a asp-controller="Home" asp-action="DeleteTask" asp-route-taskid="@task.TaskID">Delete</a>
-                        <a asp-controller="Home" asp-action="MarkComplete" asp-route-taskid="@task.TaskID">Mark completed</a>)
-                    </p>
-                }
-            }
+        <div class="col-5 border">
+
+            <table class="table table-bordered table-striped border-primary table-sm">
+
+                @*Table header and columns*@
+                <thead class="font-weight-bold table-dark">
+                    <tr>
+                        <td>Task</td>
+                        <td>Update</td>
+                        <td>Delete</td>
+                        <td>Mark Complete</td>
+                    </tr>
+                </thead>
+
+                @*Table body*@
+                <tbody>
+                    @foreach (var task in Model)
+                    {
+                        if (task.Quadrant == 1)
+                        {
+                            <tr>
+                                <td>@task.Task</td>
+                                <td><a asp-controller="Home" asp-action="Edit" asp-route-taskid="@task.TaskID">Update</a></td>
+                                <td><a asp-controller="Home" asp-action="DeleteTask" asp-route-taskid="@task.TaskID">Delete</a></td>
+                                <td><a asp-controller="Home" asp-action="MarkComplete" asp-route-taskid="@task.TaskID">Mark completed</a></td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+
+            </table>
+
         </div>
 
     </div>
