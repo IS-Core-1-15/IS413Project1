@@ -9,9 +9,9 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>*@
 
-<div class="container bg-light">
+<div class="container-fluid bg-light">
 
-    <div class="row">
+    <div class="row justify-content-center">
         <h2>Stephen Covey's Time Management Matrix</h2>
     </div>
 
@@ -163,7 +163,7 @@
                 <tbody>
                     @foreach (var task in Model)
                     {
-                        if (task.Quadrant == 1)
+                        if (task.Quadrant == 4)
                         {
                             <tr>
                                 <td>@task.Task</td>
