@@ -19,7 +19,12 @@
         <input asp-for="Date" /><br />
 
         <label asp-for="Quadrant">Quadrant Number: </label>
-        <input asp-for="Quadrant" /><br />
+        <select asp-for="Quadrant">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select><br />
 
         <label asp-for="Completed">Completed: </label>
         <select asp-for="Completed">
@@ -30,11 +35,13 @@
         <lablel asp-for="CategoryID">Category: </lablel>
         <select asp-for="CategoryID">
             <option value="">Select a Category</option>
-            @foreach (Category c in ViewBag.Categories)
+            @foreach (CategoryModel c in ViewBag.Categories)
             {
                 <option value="@c.CategoryID">@c.CategoryName</option>
             }
-        </select><br />
+        </select><br /><br />
+
+        <button type="submit">Submit</button>
 
     </form>
 </div>
