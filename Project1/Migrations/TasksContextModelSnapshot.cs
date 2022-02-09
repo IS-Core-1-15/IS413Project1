@@ -64,7 +64,7 @@ namespace Project1.Migrations
                     b.Property<bool>("Completed")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("Date")
+                    b.Property<DateTime?>("Date")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Quadrant")
@@ -86,7 +86,7 @@ namespace Project1.Migrations
                             TaskID = 1,
                             CategoryID = 1,
                             Completed = true,
-                            Date = new DateTime(2022, 2, 4, 22, 39, 38, 855, DateTimeKind.Utc).AddTicks(3080),
+                            Date = new DateTime(2022, 2, 9, 16, 50, 5, 522, DateTimeKind.Utc).AddTicks(5430),
                             Quadrant = 1,
                             Task = "Make the database"
                         },
@@ -95,7 +95,7 @@ namespace Project1.Migrations
                             TaskID = 2,
                             CategoryID = 3,
                             Completed = false,
-                            Date = new DateTime(2022, 2, 4, 22, 39, 38, 855, DateTimeKind.Utc).AddTicks(4220),
+                            Date = new DateTime(2022, 2, 9, 16, 50, 5, 522, DateTimeKind.Utc).AddTicks(7190),
                             Quadrant = 2,
                             Task = "Make the Shared Layout"
                         },
@@ -104,7 +104,7 @@ namespace Project1.Migrations
                             TaskID = 3,
                             CategoryID = 4,
                             Completed = false,
-                            Date = new DateTime(2022, 2, 4, 22, 39, 38, 855, DateTimeKind.Utc).AddTicks(4250),
+                            Date = new DateTime(2022, 2, 9, 16, 50, 5, 522, DateTimeKind.Utc).AddTicks(7220),
                             Quadrant = 3,
                             Task = "Make the quadrant views"
                         },
@@ -113,7 +113,7 @@ namespace Project1.Migrations
                             TaskID = 4,
                             CategoryID = 2,
                             Completed = false,
-                            Date = new DateTime(2022, 2, 4, 22, 39, 38, 855, DateTimeKind.Utc).AddTicks(4250),
+                            Date = new DateTime(2022, 2, 9, 16, 50, 5, 522, DateTimeKind.Utc).AddTicks(7230),
                             Quadrant = 4,
                             Task = "Make the Controllers"
                         });

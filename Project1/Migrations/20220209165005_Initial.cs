@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Project1.Migrations
 {
-    public partial class Inital : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -27,7 +27,7 @@ namespace Project1.Migrations
                     TaskID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Task = table.Column<string>(nullable: false),
-                    Date = table.Column<DateTime>(nullable: false),
+                    Date = table.Column<DateTime>(nullable: true),
                     Quadrant = table.Column<int>(nullable: false),
                     Completed = table.Column<bool>(nullable: false),
                     CategoryID = table.Column<int>(nullable: false)
@@ -66,22 +66,22 @@ namespace Project1.Migrations
             migrationBuilder.InsertData(
                 table: "Tasks",
                 columns: new[] { "TaskID", "CategoryID", "Completed", "Date", "Quadrant", "Task" },
-                values: new object[] { 1, 1, true, new DateTime(2022, 2, 4, 22, 39, 38, 855, DateTimeKind.Utc).AddTicks(3080), 1, "Make the database" });
+                values: new object[] { 1, 1, true, new DateTime(2022, 2, 9, 16, 50, 5, 522, DateTimeKind.Utc).AddTicks(5430), 1, "Make the database" });
 
             migrationBuilder.InsertData(
                 table: "Tasks",
                 columns: new[] { "TaskID", "CategoryID", "Completed", "Date", "Quadrant", "Task" },
-                values: new object[] { 4, 2, false, new DateTime(2022, 2, 4, 22, 39, 38, 855, DateTimeKind.Utc).AddTicks(4250), 4, "Make the Controllers" });
+                values: new object[] { 4, 2, false, new DateTime(2022, 2, 9, 16, 50, 5, 522, DateTimeKind.Utc).AddTicks(7230), 4, "Make the Controllers" });
 
             migrationBuilder.InsertData(
                 table: "Tasks",
                 columns: new[] { "TaskID", "CategoryID", "Completed", "Date", "Quadrant", "Task" },
-                values: new object[] { 2, 3, false, new DateTime(2022, 2, 4, 22, 39, 38, 855, DateTimeKind.Utc).AddTicks(4220), 2, "Make the Shared Layout" });
+                values: new object[] { 2, 3, false, new DateTime(2022, 2, 9, 16, 50, 5, 522, DateTimeKind.Utc).AddTicks(7190), 2, "Make the Shared Layout" });
 
             migrationBuilder.InsertData(
                 table: "Tasks",
                 columns: new[] { "TaskID", "CategoryID", "Completed", "Date", "Quadrant", "Task" },
-                values: new object[] { 3, 4, false, new DateTime(2022, 2, 4, 22, 39, 38, 855, DateTimeKind.Utc).AddTicks(4250), 3, "Make the quadrant views" });
+                values: new object[] { 3, 4, false, new DateTime(2022, 2, 9, 16, 50, 5, 522, DateTimeKind.Utc).AddTicks(7220), 3, "Make the quadrant views" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tasks_CategoryID",

@@ -1,4 +1,6 @@
 # globs
+.vs/
+obj/
 Makefile.in
 *.userprefs
 *.usertasks

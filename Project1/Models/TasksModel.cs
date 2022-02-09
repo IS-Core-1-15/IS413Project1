@@ -11,8 +11,8 @@ namespace Project1.Models
 
         [Required(ErrorMessage = "You must provide a task description")]
         public string Task { get; set; }
-
-        public DateTime Date { get; set; }
+        
+        public DateTime? Date { get; set; }
 
         [Required(ErrorMessage = "You must provide a quadrant")]
         public int Quadrant { get; set; }
